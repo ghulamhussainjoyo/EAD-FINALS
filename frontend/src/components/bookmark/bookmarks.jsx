@@ -12,9 +12,8 @@ function Bookmark() {
 	const dispatch = useDispatch();
 	const bookmark = useSelector((state) => state.allBookmark);
 
-
-    console.log(bookmark)
-    // 
+	console.log(bookmark);
+	//
 	let subtitle;
 	const [ modalIsOpen, setIsOpen ] = useState(false);
 
@@ -60,13 +59,7 @@ function Bookmark() {
 
 				<div className="booki-fav">
 					<div className="bookmarks">
-						
-                        
-                        {
-                            bookmark.bookmarks && bookmark.bookmarks.map((data)=> <Bookis data={data}  key={data._id}/>)
-                        }
-                       
-						
+						{bookmark.bookmarks && bookmark.bookmarks.map((data) => <Bookis data={data} key={data._id} />)}
 					</div>
 
 					<button className="booki-add" onClick={openModal}>
@@ -74,7 +67,12 @@ function Bookmark() {
 					</button>
 				</div>
 
-				<div className="booki-visited" />
+				<div className="booki-visited">
+					<h4 style={{marginTop:'50px'}}>Frequently Visisted</h4>
+					<div className="bookmarks">
+						{bookmark.bookmarks && bookmark.bookmarks.map((data) => <Bookis data={data} key={data._id} />)}
+					</div>
+				</div>
 			</div>
 		</div>
 	);
