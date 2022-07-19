@@ -1,11 +1,15 @@
 import React from "react";
+import { BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import Bookmark from './components/bookmark/bookmarks'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Ghulam Hussain Joyo</h1>
-
-    </div>
+   
+    <Router>
+      <Routes>
+        <Route path="/" element={<Bookmark/>}/>
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,8 +1,8 @@
 
-function sendHttpRespnce(statusCode,succes,message,res)
+function sendHttpRespnce(statusCode,success,message,res)
 {
     res.status(statusCode).json({
-        succes,
+        success,
         message
     })
 }

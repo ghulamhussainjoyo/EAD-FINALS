@@ -12,7 +12,7 @@ app.use(express.json())
 databseConnection();
 
 // Router
-const user = require('./routes/userRoutes');
+const Booki = require('./routes/bookmarkRoutes');
 
 
 
@@ -26,6 +26,6 @@ app.use(fileUpload({
 app.use(cors())
 
 // 🚀 ROUTER 🚀
-app.use(user)
+app.use(Booki)
 // 🦷🦴👀👀
 module.exports = app

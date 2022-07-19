@@ -1,0 +1,69 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+		'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bookmark {
+	height: 100vh;
+	background-color: rgb(207, 207, 207);
+	padding: 2%;
+}
+
+.booki-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.bookmarks {
+	display: flex;
+    margin-bottom: 20px;
+}
+
+.bookmarks .bookis  a{
+    text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    margin:  10px 20px 10px 0;
+}
+
+.bookmarks .bookis h1 {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+    color: white;
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px 4px rgb(99, 99, 99);
+}
+
+
+
+.booki-add
+{
+    width: 100px;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	border-radius: 10px;
+    background-color: grey;
+    color: white;
+	box-shadow: 2px 2px 10px 4px rgb(99, 99, 99);
+    border: none;
+}
+
+
+.booki-add:hover
+{
+    background-color: rgb(138, 138, 138);
+}
